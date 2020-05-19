@@ -20,3 +20,5 @@ const Layout = ({user, children}) => {
         </>
     )
 }
+
+export default Layout;
