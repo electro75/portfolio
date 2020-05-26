@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { white } from '@carbon/components';
+import { white } from '@carbon/colors';
 
 export const EducationItem = styled.li`
     margin-top: 1rem;
