@@ -15,13 +15,12 @@ const MobileNav = () => {
         <Container>
             <Spacer />
             <NavWrapper>
-                {items.map(i => (
-                    <NavLink to={i.link}>
+                {items.map((i, index) => (
+                    <NavLink to={i.link} key={index} >
                         <NavButton
                             hasIconOnly
                             renderIcon={i.icon}
-                            iconDescription={i.description}
-                            toolTipPosition='bottom'
+                            iconDescription={i.description}                            
                         >
                         </NavButton>
                     </NavLink>
