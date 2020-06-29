@@ -12,7 +12,7 @@ const Me = ({user}) => {
             </div>
             <div>
                 <SectionTitle>Skills</SectionTitle>
-                <div>
+                <div style={{marginTop : '20px'}} >
                     {user.skills.map(skill => (
                         <Pill key={skill.name}>{skill.name}</Pill>
                     ))}

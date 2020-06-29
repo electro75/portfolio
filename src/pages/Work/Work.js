@@ -4,6 +4,7 @@ import { SectionTitle, Paragraph } from '../../styles';
 import { WorkItem, WorkTitle, JobTitle } from './styles';
 
 const Work = ({user}) => {
+    console.log(user.work);
     return (
         <Layout user={user}>
             <div>
@@ -16,10 +17,10 @@ const Work = ({user}) => {
                                 <JobTitle>{work.company}</JobTitle> <span>{work.loaction}</span>
                                 <span> &sdot;</span>
                                 <span>
-                                    {work.start.year} to {work.end.year}
+                                    {work.start.year} to {work.end.year? work.end.year : 'Present'}
                                 </span>
                             </div>
-                            <Paragraph>{work.summary}</Paragraph>
+                            <Paragraph>{work.summary}</Paragraph>                            
                         </WorkItem>
                     ))}
                 </ul>
