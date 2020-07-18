@@ -8,7 +8,7 @@ import Education from './Education';
 const Pages = ({ user }) => {
     return (
         <Router>
-            <Switch>
+            <Switch>                
                 <Route exact path='/' >
                     <Me user={user} />
                 </Route>

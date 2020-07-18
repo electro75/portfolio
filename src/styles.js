@@ -14,11 +14,11 @@ export const Pill = styled.span`
     displsy: inline-block;
     margin-right: 0.75rem;
     margin-bottom: 0.75rem;
-    padding: 0.5rem 1rem;
+    padding: .2rem .5rem;
     background-color: ${blue[20]};
-    color: ${blue[70]};
-    border: 3px solid ${blue[70]};
-    border-radius: 2px;
-    font-weight: bold;
+    color: ${blue[70]};    
+    border-radius: 50px;
+    font-size: .8rem;
+    font-weight: 600;    
 `
 

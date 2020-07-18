@@ -5,9 +5,9 @@ import {Container, Spacer, NavWrapper, NavButton, NavLink} from './styles';
 
 const items = [
     {description : 'Me', icon : User32, link: '/'},
-    {description: 'Projects', icons: Code32, link: '/projects'},
-    {description: 'Portfolio', icons: Portfolio32, link: 'work'},
-    {description: 'Education', icons: Education32, link: '/education'}
+    {description: 'Projects', icon: Code32, link: '/projects'},
+    {description: 'Portfolio', icon: Portfolio32, link: '/work'},
+    {description: 'Education', icon: Education32, link: '/education'}
 ]
 
 const MobileNav = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import {SectionTitle, Paragraph, Pill} from '../../styles';
-import {ProfileLink} from './styles';
+import {ProfileLink, SkillBox} from './styles';
 
 const Me = ({user}) => {
     return (
@@ -12,11 +12,11 @@ const Me = ({user}) => {
             </div>
             <div>
                 <SectionTitle>Skills</SectionTitle>
-                <div style={{marginTop : '20px'}} >
+                <SkillBox>
                     {user.skills.map(skill => (
                         <Pill key={skill.name}>{skill.name}</Pill>
                     ))}
-                </div>
+                </SkillBox>
             </div>
             <div>
                 <SectionTitle>Profiles</SectionTitle>

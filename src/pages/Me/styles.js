@@ -6,3 +6,9 @@ export const ProfileLink = styled.li`
     display: inline-block;
     font-size: 18px;
 `
+export const SkillBox = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 50rem;
+`

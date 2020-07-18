@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 
     @media(max-width: 640px) {
         display: ${({ isHome }) => (isHome ? 'none' : 'flex')};
-        flex-direction : column;
+        flex-direction : column;        
     }
 `
 
@@ -30,9 +30,9 @@ export const ViewResumeLink = styled.a`
     padding: 0.75rem 1.5rem;
     font-weight: bold;
     align-items: center;
-    border: 2px solid #2ecc40;
+    border-radius: 100px;    
     background-color: rgba(46, 204, 64, 0.3);
-    transition: background-color 250ms ease;
+    transition: background-color 250ms ease;    
 
     &hover {
         background-color: #2ecc40;
@@ -41,5 +41,10 @@ export const ViewResumeLink = styled.a`
     svg {
         fill: white;
         margin-left: 8px;
+    }
+
+    @media(max-width: 640px) {
+        margin-top: 1rem;
+        justify-content: center;        
     }
 `

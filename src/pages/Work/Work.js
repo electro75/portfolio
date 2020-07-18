@@ -3,8 +3,7 @@ import Layout from '../../components/Layout';
 import { SectionTitle, Paragraph } from '../../styles';
 import { WorkItem, WorkTitle, JobTitle } from './styles';
 
-const Work = ({user}) => {
-    console.log(user.work);
+const Work = ({user}) => {    
     return (
         <Layout user={user}>
             <div>
