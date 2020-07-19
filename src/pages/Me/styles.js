@@ -9,6 +9,6 @@ export const ProfileLink = styled.li`
 export const SkillBox = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 50rem;
 `
