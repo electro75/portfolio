@@ -9,6 +9,7 @@ export const ProjectItem = styled.li`
 
 export const ProjectTitle = styled.h4`
     font-weight: bold;
+    text-transform: capitalize;
 `
 
 export const SkillContainer = styled.div`
