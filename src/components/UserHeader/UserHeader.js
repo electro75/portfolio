@@ -1,4 +1,5 @@
 import React from 'react';
+import {useLocation} from 'react-router-dom';
 import {ArrowRight16} from '@carbon/icons-react';
 
 import {HeaderContainer, Header, Image, ViewResumeLink} from './styles';
