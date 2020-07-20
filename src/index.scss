@@ -13,16 +13,32 @@ a {
   background-color: $ui-background;
 }
 
+.bx--side-nav__item:not(:last-of-type) {
+  margin-bottom: .5rem
+}
+
 a.bx--side-nav__link--current,
 a.bx--side-nav__link--current > span.bx--side-nav__link-text {
-  background-color: $ui-01;
+  // background-color: $ui-01;
+  z-index: 10;
+  background-color: #0f62fe;
   color: $text-04;
 }
 
 .bx--side-nav__item:not(.bx--side-nav__item--active)
-  > .bx--side-nav__link:hover {
-  background-color: $ui-01;
-  color: $text-04;
+  > .bx--side-nav__link {
+
+    color: $text-04;
+    z-index: 10;
+
+    &:hover {
+      background-color: $ui-background;      
+    }
+
+    &--current:hover {
+      background-color: #0f62fe;
+    }
+  
 }
 
 a.bx--side-nav__link > .bx--side-nav__link-text,
@@ -30,4 +46,34 @@ a.bx--side-nav__link > .bx--side-nav__link-text,
   > .bx--side-nav__link:hover
   > span {
   color: $text-04;
+  z-index: 10;
+}
+
+a.bx--side-nav__link::before {
+  background-color: #0f62fe;
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  width: 3px;
+
+  transform: scaleY(0);
+  transition: transform .2s,
+              width .4s cubic-bezier(1, 0, 0, 1) .2s,
+              background-color .1s;
+}
+
+a.bx--side-nav__link {
+
+  &:hover::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  &--current:hover::before {
+    width: 3px;
+    transform: scaleY(0);
+  }
 }
