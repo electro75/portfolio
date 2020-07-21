@@ -24,7 +24,7 @@ export const Image = styled.img`
     border-radius : 2px;
 `
 
-export const ViewResumeLink = styled.a`
+export const ViewResumeLink = styled.button`
     display: flex;
     text-decoration: none;
     padding: 0.75rem 1.5rem;
@@ -32,7 +32,11 @@ export const ViewResumeLink = styled.a`
     align-items: center;
     border-radius: 100px;    
     background-color: rgba(46, 204, 64, 0.3);
-    transition: background-color 250ms ease;    
+    transition: background-color 250ms ease;  
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase; 
 
     &hover {
         background-color: #2ecc40;

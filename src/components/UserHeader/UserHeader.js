@@ -1,12 +1,17 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
-import {ArrowRight16} from '@carbon/icons-react';
+import {Download16} from '@carbon/icons-react';
+import FileSaver from 'file-saver';
 
 import {HeaderContainer, Header, Image, ViewResumeLink} from './styles';
 
 const UserHeader = ({user}) => {    
 
     const location = useLocation();
+
+    function handleClick() {
+        FileSaver.saveAs('./resume.pdf', 'resume.pdf');
+    }
 
     return (
         <HeaderContainer isHome={location.pathname !== '/'} >
@@ -31,12 +36,13 @@ const UserHeader = ({user}) => {
             </Header>
             <div>
                 <ViewResumeLink
-                    href={`https://gitconnected.com/${user.basics.username}/resume`}
-                    target="_blank"
-                    rel= "noopner noreferrer"
+                    // href={`https://gitconnected.com/${user.basics.username}/resume`}
+                    // target="_blank"
+                    // rel= "noopner noreferrer"
+                    onClick={handleClick}
                 >
-                    <span>View Resume</span>
-                    <ArrowRight16/>
+                    <span>Download Resume</span>
+                    <Download16/>
                 </ViewResumeLink>
             </div>
         </HeaderContainer>
