@@ -29,17 +29,19 @@ export const ViewResumeLink = styled.button`
     text-decoration: none;
     padding: 0.75rem 1.5rem;
     font-weight: bold;
-    align-items: center;
-    border-radius: 100px;    
-    background-color: rgba(46, 204, 64, 0.3);
+    align-items: center;        
+    background-color: #24A148;
     transition: background-color 250ms ease;  
     color: #fff;
     outline: none;
     cursor: pointer;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    transform: scale(0.95); 
+    border: none;
+    transition: all .2s;
 
-    &hover {
-        background-color: #2ecc40;
+    &:hover {        
+        transform: scale(1);
     }
 
     svg {

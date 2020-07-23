@@ -60,8 +60,8 @@ a.bx--side-nav__link::before {
   width: 3px;
 
   transform: scaleY(0);
-  transition: transform .2s,
-              width .4s cubic-bezier(1, 0, 0, 1) .2s,
+  transition: transform .15s,
+              width .1s cubic-bezier(1, 0, 0, 1) .15s,
               background-color .1s;
 }
 
@@ -75,5 +75,9 @@ a.bx--side-nav__link {
   &--current:hover::before {
     width: 3px;
     transform: scaleY(0);
+  }
+
+  &:focus {
+    outline: none;
   }
 }
