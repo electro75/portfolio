@@ -7,6 +7,7 @@ import './icon-style.css'
 
 
 const Projects = ({ user }) => { 
+    console.log(user);
     
     function getLinks(wb, gh) {
         if(wb.length > 0) {

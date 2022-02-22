@@ -4,6 +4,7 @@ import Me from './Me';
 import Projects from './Projects';
 import Work from './Work';
 import Education from './Education';
+import Product from './Product';
 
 const Pages = ({ user }) => {
     return (
@@ -14,6 +15,9 @@ const Pages = ({ user }) => {
                 </Route>
                 <Route exact path='/projects' >
                     <Projects user={user} />
+                </Route>
+                <Route exact path='/product' >
+                    <Product user={user} />
                 </Route>
                 <Route exact path='/work' >
                     <Work user={user} />
